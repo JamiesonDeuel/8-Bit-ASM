@@ -1,13 +1,16 @@
 rom_size = 8192 
 
 data = [0] * rom_size  
+
 for address in range(rom_size):
     
     
     value = address & 0xff
     
     
-    data[address] = value
+    if(address & 0xF00 == 0):
+        print(bin(address))
+        data[address] = value
 
 
 
