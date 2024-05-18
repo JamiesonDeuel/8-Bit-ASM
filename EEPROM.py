@@ -35,7 +35,7 @@ for address in range(rom_size):
         else:
             if(setup == 0 and step != 3):
             
-                UCODE_Save[step] = 0b00000111
+                UCODE_Save[step] = 0b01000111
             
             elif (step == 3 and setup == 0):
                 UCODE_Save[3]= 0b00010111
