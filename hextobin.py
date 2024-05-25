@@ -1,8 +1,8 @@
 from intelhex import IntelHex
 import sys
-# ih = IntelHex(sys.argv[1])
+ih = IntelHex(sys.argv[1])
 print((IntelHex("D:\Documents\8-Bit-ASM\Display.hex")).todict())
-# ih.tobinfile(sys.argv[1].replace(".hex",".bin"))
+ih.tobinfile(sys.argv[1].replace(".hex",".bin"))
 data = {}
 
 for key in (IntelHex("D:\Documents\8-Bit-ASM\Display.hex")).todict():
